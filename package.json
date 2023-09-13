@@ -7,6 +7,9 @@
   "author": "Jojo <jojothomas1515@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
