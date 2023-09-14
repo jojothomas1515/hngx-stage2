@@ -37,7 +37,7 @@
 
 ---
 
-`GET` localhost:5000/0daa6434-99cf-4911-b3ce-548c8452ab33
+`GET` localhost:5000/api/0daa6434-99cf-4911-b3ce-548c8452ab33
 
 * Get the person if it exists
 
@@ -62,7 +62,7 @@
 
 ---
 
-`PUT` localhost:5000/0daa6434-99cf-4911-b3ce-548c8452ab33
+`PUT` localhost:5000/api/0daa6434-99cf-4911-b3ce-548c8452ab33
 
 * Update the person info if it exists
 *
@@ -104,7 +104,7 @@
 
 ---
 
-`DELETE` localhost:5000/0daa6434-99cf-4911-b3ce-548c8452ab33
+`DELETE` localhost:5000/api/0daa6434-99cf-4911-b3ce-548c8452ab33
 
 * Delete the person if it exists
 
