@@ -39,3 +39,11 @@ Finally run the server
 ```bash
 npm start
 ```
+
+## [ENDPOINT DOCUMENTATION](./DOCUMENTATION.md)
+
+
+## POSTMAN
+
+to test with postman use this [postman workspace](https://www.postman.com/research-candidate-8691654/workspace/hngx-stage-2-backend)
+

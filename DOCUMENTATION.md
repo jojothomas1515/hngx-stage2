@@ -123,3 +123,29 @@
   ```
 
 ---
+
+## Bonus endpoint
+
+`GET` localhost:5000/api
+
+* Get all persons in the database
+
+### Response
+
+```json
+[
+  {
+    "id": "0daa6434-99cf-4911-b3ce-548c8452ab33",
+    "name": "example user",
+    "updatedAt": "2023-09-14T09:48:45.038Z",
+    "createdAt": "2023-09-14T09:48:45.038Z"
+},
+{
+    "id": "0daa6434-99cf-4911-b3ce-548c8452ab24",
+    "name": "dummy user",
+    "updatedAt": "2023-09-14T09:48:45.038Z",
+    "createdAt": "2023-09-14T09:48:45.038Z"
+},
+...
+]
+```
