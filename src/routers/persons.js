@@ -26,8 +26,8 @@ user_route.post("/", async (req, res, next) => {
  */
 user_route.get("/:person_id",
   async (req, res, next) => {
-    const user_id = req.params.user_id;
-    const person = await Person.findByPk(user_id);
+    const person_id = req.params.person_id;
+    const person = await Person.findByPk(person_id);
     if (!person) {
       res.json({ "error": "Person not found" }).status(404);
       return;
@@ -42,13 +42,13 @@ user_route.get("/:person_id",
  */
 user_route.put("/:person_id",
   async (req, res, next) => {
-    const user_id = req.params.user_id;
+    const person_id = req.params.person_id;
     const { name } = req.body;
     if (!name) {
       res.json({ error: "invalid format" }).status(400);
       return;
     }
-    const person = await Person.findByPk(user_id);
+    const person = await Person.findByPk(person_id);
     if (!person) {
       res.json({ "error": "Person not found" }).status(404);
       return;
@@ -65,8 +65,8 @@ user_route.put("/:person_id",
  */
 user_route.delete("/:person_id",
   async (req, res, next) => {
-    const user_id = req.params.user_id;
-    const person = await Person.findByPk(user_id);
+    const person_id = req.params.person_id;
+    const person = await Person.findByPk(person_id);
     if (!person) {
       res.json({ "error": "Person not found" }).status(404);
       return;
