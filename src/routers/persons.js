@@ -21,6 +21,14 @@ user_route.post("/", async (req, res, next) => {
 });
 
 /**
+ * Get All Person on the database
+ */
+user_route.get("/", async (req, res, next) => {
+  const allPersons = await Person.findAll();
+  res.json(allPersons.map(person => person.toJSON()));
+});
+
+/**
  * Gets the person by uuid
  * Returns 404 if person not in database
  */
